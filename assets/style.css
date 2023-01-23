@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #1d4c8b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    padding-bottom: 0 0 10px;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* Page */
+
+.page {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 950px;
+
+    background-color: #fecfc4;
+
+    position: relative;
+}
+
+.intro__title {
+    max-width: 960px;
+    width: 100%;
+    margin-top: 90px;
+
+    font-weight: 500;
+    font-size: 145px;
+    color: #1d4c8b;
+    text-align: center;
+    line-height: 1
+}
+
+.intro__subtitle {
+    margin-top: 35px;
+
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 69px;
+}
+
+.intro__plate {
+    position: absolute;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Nav */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 68px;
+    padding: 0 100px;
+}
+
+.nav__logo {
+    transition: filter .2s linear;
+}
+
+.nav__logo:hover {
+    filter: drop-shadow(0 0 30px #1d4c8b);
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1d4c8b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: text-shadow .2s linear;
+}
+
+.nav__link:hover {
+    text-shadow: 0 0 20px #68a0e9;
+}
+
+.nav__cart {
+    transition: filter .2s linear;
+}
+
+.nav__cart:hover {
+    filter: drop-shadow(0 0 30px #1d4c8b);
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 1500px;
+    height: 100%;
+    padding-top: 300px;
+    background: url(images/2/bgnew.png) top no-repeat;
+    background-color: #fff8ee;
+    background-size: contain;
+}
+
+.card {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 1040px;
+    height: 100%;
+
+    background-color: #fff;
+    border: 2px solid #1d4c8b;
+}
+
+.card__container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card__title {
+    margin-top: 44px;
+    
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__subtitle {
+    max-width: 600px;
+    width: 100%;
+    margin: 4px auto 0;
+
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.card__namegroup {
+    max-width: 800px;
+    width: 100%;
+    height: 92px;
+    margin-top: 80px;
+    padding-top: 22px;
+
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #1d4c8b;
+    background-color: #fecfc4;
+}
+
+.card__groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.card__group {
+    width: 280px;
+}
+
+.card__group-title {
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+
+.card__group-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card__group-item {
+    line-height: 1.2;
+}
+
+.card__group-item {
+    display: block;
+	margin: 0 0 10px 0;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+
+.card__group-prop {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 1.2;
+}
+
+.card__group-price {
+    margin-right: 5px;
+}
